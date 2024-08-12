@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="/style/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container-header">
+            <div class="flex-header"><a href="index.html">
+                    <h1>The Fashion Pet</h1>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="register.html">Register</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <form action="#">
+            <div class="form-container">
+                <fieldset>
+                    <legend>Register Form</legend>
+                    <div class="flex-item-form">
+                        <div class="item-form">
+                            <label for="name">Pet Name: </label>
+                        </div>
+                        <div class="item-input">
+                            <input placeholder="Pet Name" type="text" id="txtName" />
+                        </div>
+                    </div>
+                    <div class="flex-item-form">
+                        <div class="item-form">
+                            <label for="age">Age: </label>
+                        </div>
+                        <div class="item-input">
+                            <input placeholder="Age" type="text" id="txtAge" />
+                        </div>
+                    </div>
+                    <div class="flex-item-form">
+                        <div class="item-form">
+                            <label for="gender">Gender: </label>
+                        </div>
+                        <div class="item-input">
+                            <input placeholder="Gender" type="text" id="txtGender" />
+                        </div>
+                    </div>
+                    <div class="flex-item-form">
+                        <div class="item-form">
+                            <label for="Breed">Breed: </label>
+                        </div>
+                        <div class="item-input">
+                            <input placeholder="Breed" type="text" id="txtBreed" />
+                        </div>
+                    </div>
+                    <div class="flex-item-form">
+                        <div class="item-form">
+                            <label for="service">Service: </label>
+                        </div>
+                        <div class="item-input">
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="option1">Grooming</option>
+                                <option value="option2">DayCare</option>
+                                <option value="option3">Mobile Dog Grooming Service</option>
+                            </select>                        
+                        </div>
+                    </div>
+                    <div class="button-register">
+                        <button onclick="register()" class="btn-r">Register</button>
+                    </div>
+                    
+                </fieldset>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="flex-footer">
+            <a href="index.html">The Fashion Pet<a>
+        </div>
+    </footer>
+    <script src="./script/register.js"></script>
+</body>
+
+</html>

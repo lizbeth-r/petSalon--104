@@ -2,8 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "Titillium Web", sans-serif;
-    background-color: #F8EDE3;
 }
 img{
     max-width: 300px;
@@ -12,39 +10,67 @@ img{
 a{
     text-decoration: none;
 }
-
+p{
+    margin: 15px 0 ;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
 /* utilities */
 .container{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
+.container-header{
+    background-color: #536493;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.flex-header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: "Bree Serif", serif;
+}
+.flex-header a{
+    color: white;
+}
+.material-symbols-outlined {
+  color: white;
+}
 /* Text Styles */
 .main-text{
     font-family: 900;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 1;
     letter-spacing: 1px;
+    color: #EF5A6F;
 }
-.secondary.text{
-    font-weight: 700;
+.secondary-text{
     font-size: 24px;
     margin-top: 20px;
     margin-bottom: 5px;
+    color: #8a7565;
 }
 .normal-text{
     font-size: 20px;
     line-height: 1.5;
 }
 .btn{
-    display: block;
-    width: 200px;
-    background-color: black;
+    display: inline-block;
+    background-color: #536493;
     color: white;
-    padding: 15px;
+    padding: 15px 40px;
     text-align: center;
     margin-top: 30px;
     font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 100px;
 }
 /* header */
 nav a{
@@ -52,6 +78,38 @@ nav a{
     font-weight: 300;
     font-size: 24px;
     margin: 10px 30px;
+}
+.info-main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.flex-services{
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;  
+}
+.service-one{
+    width: 100%;
+    display: block;
+    padding: 50px 20px;
+    background-color: #EF5A6F;
+    text-align: center;
+    align-content: center;
+}
+.service-two{
+    width: 100%;
+    display: block;
+    padding: 50px 20px;
+    background-color: #536493;
+    text-align: center;
+    align-content: center;
+}
+.service-one h3,
+.service-two h3{
+    margin-top: 30px;
+    color: white;
+    font-weight: 200;
 }
 .display-results{
     display: flex;
@@ -64,11 +122,68 @@ nav a{
     text-align: left;
     line-height: 2;
 }
-button{
+/* button{
     padding: 3px;
     border-radius: 3px;
     font-size: 15px;
     background-color: black;
     color: white;
+} */
+
+.form-container{
+    background-color: rgb(236, 236, 236);
+    border-radius: 10px;
+    padding: 3px 0px;
+    margin-top: 30px;
+}
+fieldset{
+    border-radius: 10px;
+    padding: 0 15px;
+    margin: 20px;
+}
+.flex-item-form{
+    width: 100%;
+    display: flex;
+    margin: 10px 0;
+}
+.item-form{
+    width: 30%;
+}
+.item-input{
+    width: 70%;
+}
+input,
+textarea,
+select{
+    width: 70%;
+    height: 20px;
+}
+textarea{
+    height: 40px;
+}
+.button-register{
+    margin: 20px;
+    float: right;
+}
+.btn-r{
+    padding: 5px 10px;
+    background-color:#EF5A6F;
+    border: 1px solid #aa3b4a;
+    color:white;
+}
+
+footer{
+    background-color: #536493;
+}
+.flex-footer{
+    color: white;
+    font-family: "Bree Serif", serif;
+    margin-top: 300px;
+    padding: 20px 80px;
+    text-align: right;
+}
+.flex-footer a{
+    color: white;
+    font-size: 30px;
 }
 
