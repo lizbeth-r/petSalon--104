@@ -161,15 +161,23 @@ select{
 textarea{
     height: 40px;
 }
-.button-register{
-    margin: 20px;
-    float: right;
-}
 .btn-r{
+    display: inline-block;
+    margin-top: 20px;
     padding: 5px 10px;
     background-color:#EF5A6F;
     border: 1px solid #aa3b4a;
     color:white;
+    border-radius: 5px;
+}
+.form-container{
+    padding: 20px;
+}
+.table{
+    margin-top: 20px;
+}
+#totalPet{
+    color: #EF5A6F;
 }
 
 footer{
