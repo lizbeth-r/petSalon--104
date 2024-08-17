@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
-    <title>Register</title>
     <link rel="stylesheet" href="/style/main.css">
+    <title>Register</title>
+    
 </head>
 
 <body>
@@ -24,12 +25,13 @@
                 <nav>
                     <a href="index.html">Home</a>
                     <a href="register.html">Register</a>
+                    <a href="services.html">Services</a>
                 </nav>
             </div>
         </div>
     </header>
     <main class="container">
-        <form action="#">
+        <form action="#" id="petsForm">
             <div class="form-container">
                 <h2>Register Form</h2>
                 <label for="name" class="form-label">Pet Name:</label>
@@ -44,16 +46,14 @@
                 <label for="Breed" class="form-label">Breed: </label>
                 <input placeholder="Breed" type="text" id="txtBreed" class="form-control" />
 
-                <!-- <label for="service" class="form-label">Service: </label>
-                <div class="item-input">
-                    <select id="service" name="service" class="form-select">
-                        <option value="" disabled selected>Select a service</option>
-                        <option value="option1" id="txtService">Grooming</option>
-                        <option value="option2" id="txtService">DayCare</option>
-                        <option value="option3" id="txtService">Mobile Dog Grooming Service</option>
-                    </select>
-                </div> -->
-                <button onclick="register()" class="btn-r">Register</button>
+                <label for="service" class="form-label">Service: </label>
+                <select id="service" name="service" class="form-select">
+                    <option value="" disabled selected>Select a service</option>
+                    <option value="Grooming">Grooming</option>
+                    <option value="DayCare">DayCare</option>
+                    <option value="Mobile Dog<br>Grooming Service">Mobile Dog Grooming Service</option>
+                </select>
+            <button onclick="register()" class="btn-r">Register</button>
             </div>
         </form>
     </main>
@@ -68,7 +68,8 @@
                         <th scope="col">Age</th>
                         <th scope="col">Gender</th>
                         <th scope="col">Breed</th>
-                        <!-- <th scope="col">Action</th> -->
+                        <th scope="col">Service</th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody id="pets">
@@ -79,7 +80,7 @@
         </div>
     </div>
     <footer>
-        <div class="flex-footer">
+        <div class="flex-footer" style="margin-top: 250px;">
             <a href="index.html">The Fashion Pet<a>
         </div>
     </footer>
