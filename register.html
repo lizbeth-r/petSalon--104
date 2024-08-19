@@ -47,11 +47,9 @@
                 <input placeholder="Breed" type="text" id="txtBreed" class="form-control" />
 
                 <label for="service" class="form-label">Service: </label>
-                <select id="service" name="service" class="form-select">
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="Grooming">Grooming</option>
-                    <option value="DayCare">DayCare</option>
-                    <option value="Mobile Dog<br>Grooming Service">Mobile Dog Grooming Service</option>
+                <select id="txtServices" name="" class="form-select">
+                    <option value="" selected disabled>Select a service</option>
+                    
                 </select>
             <button onclick="register()" class="btn-r">Register</button>
             </div>
@@ -84,6 +82,8 @@
             <a href="index.html">The Fashion Pet<a>
         </div>
     </footer>
+    <script src="./plugins/jQuery.js"></script>
+    <script src="./script/storeManager.js"></script>
     <script src="./script/register.js"></script>
     <script src="./script/display.js"></script>
 </body>
